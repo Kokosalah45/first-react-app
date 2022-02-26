@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import s from './main.module.scss';
+
 import PageSection from '../pagesection/PageSection';
 import ImageViewer from '../imageviewer/ImageViewer';
 import Form from '../form/Form'
