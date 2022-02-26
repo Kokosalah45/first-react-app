@@ -5,7 +5,7 @@ import SectionTitle from '../../sectiontitle/SectionTitle'
 export default class Intro extends Component {
   render() {
     return (
-    <section className={`${s.intro}`}>
+    <section className={`${s.intro}`} id="header">
       <div className={`container ${s.container }`}>
             <img src={avatar} className={`${s.avatarImg}`} alt="" />
             <SectionTitle textContent = "Start React" componentsColor="white" headerFont="fsLarge" />

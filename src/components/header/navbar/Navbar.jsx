@@ -1,6 +1,6 @@
 import  { Component } from 'react'
 import s from './navbar.module.scss'
-
+import {Link} from 'react-scroll'
 export default class Navbar extends Component {
   state = {
     isScrolled : false
@@ -16,11 +16,41 @@ export default class Navbar extends Component {
     return (
      <nav className = {`${s.nav} ${this.state.isScrolled ? s.navActive : null }`}>
          <div className = {`container ${s.container}`}>
-         <h1 className={`${s.mainHeader}`}>start react</h1>
+         <h1 className={`${s.mainHeader}`}>
+           <Link to="header">start react</Link>
+         </h1>
          <ul className = {`${s.navLinks}`}>
-             <li className={`${s.NavLinksItem}`}>portfolio</li>
-             <li className={`${s.NavLinksItem}`}>about</li>
-             <li className={`${s.NavLinksItem}`}>contact</li>
+            <li>
+               <Link 
+               className={`${s.navLinksItem}`} 
+               activeClass={`${s.active}`} 
+               to='portfolio' 
+               spy={true}
+               offset={-70}
+               duration={1000}
+               >
+               portfolio</Link>
+            </li>
+            <li>
+             <Link
+              className={`${s.navLinksItem}`} 
+              activeClass={`${s.active}`} 
+              to='about'
+              spy={true}
+              offset={-70}
+              duration={1000}
+              >about</Link>
+            </li>
+             <li>
+             <Link
+              className={`${s.navLinksItem}`} 
+              activeClass={`${s.active}`} 
+              to='contact me'
+              spy={true}
+              offset={-70}
+              duration={1000}  
+              >contact me</Link>
+             </li>
          </ul>
          </div>
     
