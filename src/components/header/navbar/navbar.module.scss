@@ -1,0 +1,31 @@
+.nav{
+    padding : 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: rgb(44, 62, 80);
+    position: fixed;
+    width : 100%;
+    z-index: 999;
+    transition: padding .3s ease;
+
+}
+.navActive{
+    padding : 1em;
+}
+.container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: min(70% , 1444px);
+
+}
+.navLinks{
+ display: flex;
+ padding : .5em;
+ gap : 2em;
+}
+.mainHeader{
+    font-size: 2rem;
+    white-space: nowrap;
+   
+}

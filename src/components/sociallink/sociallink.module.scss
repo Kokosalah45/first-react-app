@@ -1,0 +1,17 @@
+.socialLink{
+    border-radius: 50%;
+    border : 2px solid white;
+    width : 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+.socialLink:hover{
+    color : black;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  
+}

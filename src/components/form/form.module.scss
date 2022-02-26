@@ -1,0 +1,35 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 1em;
+
+}
+.form > :not(button){
+    width : 100%;
+    padding : 1.5em;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #495057;
+    border : none;
+    border-bottom: 1px solid rgb(184,184,184 , 0.5);
+    box-shadow: none;
+    outline: none;
+}
+
+.formButton{
+    padding : 1.5em 2em;
+    margin : 1em;
+    background-color: rgb(26, 188, 156);
+    color : white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all .5s ease;
+
+}
+.formButton:hover{ 
+    background-color: #159a80;
+    border-color: #148f77;
+}
+

@@ -1,0 +1,23 @@
+.intro{
+    flex : 1;
+    background-color: #1abc9c;
+    padding-top: 104px;
+   
+
+}
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height : 100%;
+    
+    
+}
+.container > :not(:last-child){
+    margin-bottom: 2em;
+}
+.avatarImg{
+    width: 300px;
+}

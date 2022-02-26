@@ -1,0 +1,24 @@
+.picture{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  
+}
+
+
+.pictureHover{
+    position: absolute;
+    inset : 0 0 0 0;
+    background-color: #1abc9c;
+    opacity: 0;
+    display: grid;
+    place-items: center;
+    transition: opacity 0.3s ;
+    font-size: 5rem;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.pictureHover:hover{
+    opacity: 0.9;
+}

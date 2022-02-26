@@ -1,0 +1,21 @@
+.imageViewerContainer{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 1em;
+
+}
+.imageViewerContainer > *{
+    grid-column: span 2;
+
+}
+
+@media screen and (max-width : 990px){
+.imageViewerContainer > *{
+    grid-column : span 3;
+}
+}
+@media screen and (max-width : 750px){
+.imageViewerContainer > *{
+    grid-column : span 6;
+}
+}

@@ -1,0 +1,14 @@
+.pg-section {
+    padding: 6rem 0;
+}
+.section-grid{
+    display: grid;
+    grid-template-columns: minmax(1.5rem , 1fr) repeat(12,minmax(0 , calc(70rem / 12))) minmax(1.5rem , 1fr);
+    row-gap: 1em;
+}
+.section-grid > *{
+    grid-column: 2/-2;
+}
+.footer-section{
+    padding : 5rem 0;
+}
