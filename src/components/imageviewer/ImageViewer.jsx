@@ -1,4 +1,4 @@
-import s from  './Imageviewer.module.scss'
+import s from  './Imageviewerr.module.scss'
 import { Component } from 'react'
 import shortid from 'shortid'
 import Image from '../imagecomponent/Image';
